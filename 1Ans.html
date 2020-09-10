@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1Ans</title>
+</head>
+<body>
+    <div class="date_time">
+
+    </div>
+
+    <script>
+var d=document.querySelector(".date_time");
+
+var currentDate = new Date();
+var year = currentDate.getFullYear();
+var month= currentDate.getMonth();
+var day = currentDate.getDay();
+var hour = currentDate.getHours();
+var min = currentDate.getMinutes();
+var seconds = currentDate.getSeconds();
+
+if (month<10){
+    month ="0"+ month;
+}
+if (day<10){
+    day ="0"+ day;
+}
+if (min<10){
+    min ="0"+ min;
+}
+if (hour<10){
+    hour ="0"+ hour;
+}
+if (seconds<10){
+    seconds ="0"+ seconds;
+}
+
+d.innerHTML ="date and time :<br> "+ year + " - "+month+" - "+ day + " &nbsp;"+hour+":"+min+":"+seconds;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Ans4</title>
+
+    <script>
+        let btn = document.querySelector('button');
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function changeBgColor() {
+            let rCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rCol;
+        }
+    </script>
+</head>
+<body>
+    <p>This is all about that how to change the background color of a paragraph</p>
+    <button onclick="changeBgColor()">Color Changer</button>
+</body>
+</html>
